@@ -1,0 +1,6 @@
+# RPG Maker MZ temporary / system files
+*.rpgprojectbackup
+*.log
+*.tmp
+Thumbs.db
+.DS_Store

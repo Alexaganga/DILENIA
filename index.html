@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="icon/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="icon/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <title>DILENIA</title>
+</head>
+<body style="background-color: black; margin:0; padding:0; overflow:hidden;">
+    <!-- Fallback container for game -->
+    <div id="GameCanvas"></div>
+
+    <!-- Fix for "process is not defined" -->
+    <script>
+        window.process = { env: { NODE_ENV: "production" } };
+        window.addEventListener("error", function (e) {
+            console.error("Global Error:", e.message, e.filename, e.lineno);
+        });
+    </script>
+
+    <!-- Load game -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+<script>
+    // Ensure the game canvas is created
+    if (!document.getElementById("GameCanvas")) {
+        var canvas = document.createElement("canvas");
+        canvas.id = "GameCanvas";
+        document.body.appendChild(canvas);
+    }

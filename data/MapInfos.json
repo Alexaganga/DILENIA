@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"expanded":true,"name":"MAP_DEBUGROOM","order":2,"parentId":0,"scrollX":495.2,"scrollY":463.6,"quick":false},
+{"id":2,"expanded":false,"name":"MAP_titlescreen","order":1,"parentId":0,"scrollX":619,"scrollY":398.5,"quick":false},
+{"id":3,"expanded":true,"name":"MAP_NESTEST","order":3,"parentId":1,"scrollX":716.5714285714286,"scrollY":778.8571428571429,"quick":false},
+{"id":4,"expanded":true,"name":"MAP_RESETZONE","order":4,"parentId":3,"scrollX":619,"scrollY":340.5,"quick":false},
+{"id":5,"expanded":false,"name":"MAP_cavetest","order":5,"parentId":1,"scrollX":619,"scrollY":340.5,"quick":false}
+]
